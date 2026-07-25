@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SID">
+  <defs>
+    <linearGradient id="ring" x1="10" y1="12" x2="54" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#89AACC"/>
+      <stop offset="1" stop-color="#4E85BF"/>
+    </linearGradient>
+    <radialGradient id="glass" cx="30%" cy="22%" r="82%">
+      <stop offset="0" stop-color="#1f2a33"/>
+      <stop offset="0.46" stop-color="#101418"/>
+      <stop offset="1" stop-color="#060606"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.54 0 0 0 0 0.67 0 0 0 0 0.80 0 0 0 0.75 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#060606"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#ring)" stroke-width="3.4" filter="url(#softGlow)"/>
+  <circle cx="32" cy="32" r="21" fill="url(#glass)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <path d="M18 42C25 48 40 47 46 38" fill="none" stroke="#89AACC" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+  <text x="32" y="38" text-anchor="middle" fill="#F5F5F5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" font-weight="700" letter-spacing="-0.5">SID</text>
+</svg>
